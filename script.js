@@ -1,3 +1,5 @@
+const btn = document.getElementById("btnx")
+
 const qList = {
     '1':	'What is your favorite sleeping position of all time?',
     '2':	'What is the dumbest way you have been hurt?',
@@ -433,4 +435,7 @@ const qList = {
     }; 
     
     //event that trigers the JS code
-    document.getElementById("btnx").onclick = function() { getQ(),addQ() };
+    btn.addEventListener('click', () => {
+      getQ()
+      addQ()
+    })
